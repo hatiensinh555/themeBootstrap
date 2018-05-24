@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap</title>
+	<!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css" >
+     <link rel="stylesheet" href="css/bootstrap-theme.min.css" >
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/style.css" >
+	<link rel="stylesheet" href="css/animate.css" >
+	<!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/animate.js"></script>
+	<!--import-->
+<!--header-->
+	<div id="toptop">
+		<div class="container">
+			<div class="row">
+				<div class="col-xm-6 col-sm-12 col-md-12 ">
+					<div class="info col-xm-12 col-sm-7 col-md-5">
+						<div class="hv col-xm-6 col-sm-6 col-md-5">
+							<span class="glyphicon glyphicon-earphone"></span>
+							<span class="text-capitalize">Phone: 0167 7667 020</span>
+						</div>
+						<div class="hv col-xm-6 col-sm-6 col-md-7">
+							<span class="glyphicon glyphicon-map-marker"></span>
+							<span class="text-capitalize">Address: Tân Thới Nhất 13</span>
+						</div>
+					</div>
+		      		<div class="social-top nopadding col-xm-12 col-sm-5 col-md-7 text-right">
+						<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-skype" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+		      		</div><!--End social-->
+				</div>
+			</div>
+			
+		</div><!--End container-->
+	</div><!--End toptop-->
+	
+	<nav class="megamenu navbar navbar-primary center-block text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 nopadding">
+					<div class="navbar-header col-xs-7 col-sm-3 col-md-4">
+						<a href="." class="navbar-brand"><span class="glyphicon glyphicon-plus"></span>  phòng khám</a>
+					</div>
+					<div class="category col-sm-6 col-md-6">
+						<div class="navbar-collapse">
+							<a href="#" id="pull"><img src="img/nav-icon.png" alt="nav"></a>
+				                <script>
+				                     $(document).ready(function(){
+				                     		$(window).resize(function(){
+									    var w = $(window).width();
+									    if(w > 768) {
+									        $('navbar-nav').css("display","inline-flex");
+									    }
+									});
+
+				                           $('#pull').click(function(){
+				                                if($('nav .navbar-collapse .navbar-nav li').hasClass('MClick')){
+				                                      $('nav .navbar-collapse .navbar-nav li').removeClass('MClick'); 
+				                                      $('nav .navbar-collapse .navbar-nav').css("display","none");
+				                                      $('nav .navbar-header').css("display","block");
+				                                      $('nav form').css("display","block");
+				                                      $('#pull').css("top","-0.7em");
+				                                    return false;
+				                                }
+					                           else{
+					                            	$('#pull').css("top","0.3em");
+					                                $('nav .navbar-collapse .navbar-nav li').addClass('MClick').css("padding-top","0");
+					                                $('nav .navbar-collapse .navbar-nav li a').css("padding-top","0");
+					                                $('nav .navbar-collapse .navbar-nav').css("display","inline-flex").css("margin","0").css("width","100%");
+					                                $('nav .navbar-header').css("display","none");
+					                                $('nav form').css("display","none");
+					                                return false;
+					                           }  
+				                           });
+				                     });
+				                </script>
+							<ul class="nav navbar-nav text-uppercase ">
+								<li  class="active"><a href=".">trang chủ</a></li>
+								 
+							     <li class="dropdown megamenu-fw"> 
+								    	<a href="" data-toggle="dropdown">Tin Tức <span class="caret"></span></a> 
+								     <ul class="dropdown-menu" > 
+							     			<li> 
+								     			<div class="container">
+									       	<div class="row"> 
+	        										<div class="col-md-4"> 
+	         											<h3 class="title"><span class="glyphicon glyphicon-star"></span> Bài viết nổi bật</h3> 
+											          <div data-ride="carousel" class="carousel slide" id="myCarousel" data-interval="2000"> 
+											          <div class="carousel-inner"> 
+			          										 <div class="item active left"> 
+				          										 <a href="#"><img class="img-responsive" src="img/nav1.jpg" alt="bai viet"></a> 
+				         		  								 <h4>Phòng Khám Nam Khoa Cần Thơ</h4> 
+													            <button type="button" class="btn"><span class="glyphicon glyphicon-heart"></span> Đọc Ngay</button> 
+		           										</div> 
+
+												           <div class="item next left"> 
+												           	<a href="#"><img class="img-responsive" src="img/nav2.jpg" alt=""></a> 
+													            <h4>Phòng Khám Nam Khoa Cần Thơ</h4> 
+													            <button type="button" class="btn"><span class="glyphicon glyphicon-heart"></span> Đọc Ngay</button> 
+												           </div> 
+
+												           <div class="item"> 
+												           	 <a href="#"><img class="img-responsive" src="img/nav3.jpg" alt=""></a> 
+													            <h4>Phòng Khám Nam Khoa Cần Thơ</h4> 
+													            <button type="button" class="btn"><span class="glyphicon glyphicon-heart"></span> Đọc Ngay</button> 
+												           </div> 
+										         		</div> 
+										        		</div> 
+										        	</div>
+							        				<div class="col-md-4"> 
+											         <h3 class="title"><span class="glyphicon glyphicon-bell"></span> Bài viết mới nhất</h3> 
+											         <ul class="media-list"> 
+								          					<li class="media">
+								          						<a class="pull-right" href="#"><img class="img-thumbnail media-object" alt="" src="img/nav3.jpg" width="70"></a> 
+									           				<div class="media-body"> 
+									           					<p class="text-capitalize"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></p> 
+									          					 </div> 
+								          					</li> 
+												          <li class="media">
+												          		<a class="pull-right" href="#"><img class="img-thumbnail media-object" alt="" src="img/nav2.jpg" width="70"></a> 
+													           <div class="media-body"> 
+													            <p class="text-capitalize"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></p> 
+													           </div> 
+												          </li> 
+												          <li class="media">
+													          	<a class="pull-right" href="#"><img class="img-thumbnail media-object" alt="" src="img/nav1.jpg" width="70"></a> 
+													           <div class="media-body"> 
+													            <p class="text-capitalize"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></p> 
+													           </div> 
+												          </li> 
+												          <li class="media">
+													          	<a class="pull-right" href="#"><img class="img-thumbnail media-object" alt="" src="img/nav3.jpg" width="70"></a> 
+													           <div class="media-body"> 
+													            <p class="text-capitalize"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></p> 
+													           </div> 
+												          </li> 
+							         					</ul> 
+							      				</div> 
+										          <div class="col-md-4"> 
+											         <h3 class="title"><span class="glyphicon glyphicon-map-marker"></span> Bản đồ</h3> 
+											         <!--<iframe scrolling="no" marginheight="0" marginwidth="0" src="http://my.ctrlq.org/maps/#roadmap|19|10.83254891048908|106.61893385592386" width="340" height="240" frameborder="0"></iframe>--> 
+											     </div> 
+					       					</div> 
+											</div>
+				      					</li> 
+				     					</ul> 
+							     </li>
+
+								<li class="dropdown megamenu-fw" >
+									<a href="#" data-toggle="dropdown">Điều Trị <span class="caret"></span></a>
+									<ul class="dropdown-menu megamenu-content">
+										<li>
+											<div class="container">
+												<div class="row">
+													<div class="col-xs-12 col-sm-6 col-md-3">
+														<ul>
+															<li><h3><i class="fa fa-male" aria-hidden="true"></i><a href="#"> Nam khoa</a></h3></li>
+															<li><a href="">bao quy đầu</a></li>
+															<li><a href="">xuất tinh sớm</a></li>
+															<li><a href="">tuyến tiền liệt</a></li>
+															<li><a href="">đường tiết niệu</a></li>
+															<li><a href="">tinh hoàn</a></li>
+															<li><a href="">yếu sinh lý</a></li>
+														</ul>
+													</div>
+													<div class="col-xs-12 col-sm-6 col-md-3">
+														<ul>
+															<li><h3><i class="fa fa-female" aria-hidden="true"></i><a href="#"> phụ khoa</a></h3></li>
+															<li><a href="">buồng trứng</a></li>
+															<li><a href="">phá thai</a></li>
+															<li><a href="">rối loạn kinh nguyệt</a></li>
+															<li><a href="">viêm âm đạo</a></li>
+															<li><a href="">vá màng trinh</a></li>
+															<li><a href="">cổ tử cung</a></li>
+														</ul>
+													</div>
+													<div class="col-xs-12 col-sm-6 col-md-3">
+														<ul>
+															<li><h3><i class="fa fa-thermometer-empty" aria-hidden="true"></i><a href="#"> Bệnh trĩ</a></h3></li>
+															<li><a href="">trĩ nội</a></li>
+															<li><a href="">trĩ ngoại</a></li>
+															<li><a href="">trĩ hỗn hợp</a></li>
+															<li><a href="">apxe hậu môn</a></li>
+															<li><a href="">rò hậu môn</a></li>
+															<li><a href="">nứt hậu môn</a></li>
+														</ul>
+													</div>
+													<div class="col-xs-12 col-sm-6 col-md-3">
+														<ul>
+															<li><h3><i class="fa fa-venus-double" aria-hidden="true"></i><a href="#"> bệnh xã hội</a></h3></li>
+															<li><a href="">giang mai</a></li>
+															<li><a href="">bệnh lậu</a></li>
+															<li><a href="">sùi mào gà</a></li>
+															<li><a href="">mụn rộp sinh dục</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+		
+								</li>
+								<li><a href=".">liên hệ</a></li>
+								
+							</ul>
+							<a class="go" id="goTop" title="Đến đầu trang" onclick="$('html,body').animate({scrollTop:0})"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class=" col-xs-5 col-sm-2 col-md-2">
+						<form action="action" method="post" class="form-inline">
+						<div class="form-group">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							<input type="text" class="form-control">
+						</div>
+					</form>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</nav><!--end megamenu-->
+<script>
+            $(document).ready(function(){
+                // ////////////////
+                var lastScroll=0;
+                $(window).scroll(function(){
+                    var nowScroll=$(this).scrollTop();
+                    if(nowScroll<lastScroll && nowScroll != 0){
+                        $('#goTop').addClass('goTop');
+                        $('nav').addClass('fixed');
+                    }else{
+                        $('#goTop').removeClass('goTop');
+                        $('nav').removeClass('fixed');
+                    }
+                    lastScroll=nowScroll;
+                });
+            });
+</script>
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	  </ol>
+
+	  <!-- Wrapper for slides -->
+	<div class="carousel-inner ">
+	     <div class="item active">
+		     <img src="img/slide.jpg" alt="slide">
+			<div class="carousel-caption content1">
+			 	<p class="text-capitalize">phòng khám đa khoa</p>
+			 	<p class="text-uppercase">What is Lorem Ipsum</p>
+			 	<p class="text-capitalize">địa chỉ chữa bệnh uy tín ở <span>Cần thơ</span></p>
+			 	<p><i class="fa fa-comments" aria-hidden="true"></i></p>
+			 	<p>Tư vấn ngay</p>
+			</div>
+		</div>
+		<div class="item">
+		   	     <img src="img/slide2.jpg" alt="slide">
+			     <div class="carousel-caption content2 clearfix">
+			      	<div class="left">
+						<p class="text-uppercase text-left">What is Lorem Ipsum</p>
+						<p class="text-capitalize text-left">Lorem Ipsum is simply dummy text of the printing </p>
+						<ul class="col-md-12">
+							<li class="glyphicon glyphicon-ok col-md-12 text-left">  Uy Tín</li>
+							<li class="glyphicon glyphicon-ok col-md-12 text-left">  Chất Lượng</li>
+							<li class="glyphicon glyphicon-ok col-md-12 text-left">  What is Lorem Ipsum</li>
+							<li class="glyphicon glyphicon-ok col-md-12 text-left">  What is Lorem Ipsum</li>
+						</ul>
+						<a href="#" class="pull-left">Đặt Hẹn Ngay</a>
+			      	</div>
+			      </div>
+		    </div>	    
+	  	</div>
+
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left"></span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right"></span>
+	  </a>
+	</div><!--end slide-->
+<script>
+	$(document).ready(function(){
+		$('ul.nav li.dropdown').hover(function() {
+			$(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(500);
+				}, function() {
+				  $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(500);
+		});
+	});
+</script>
+<!--End header-->
+	<div class="gioithieu">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-sm-9 col-md-10">
+					<h2 class="text-uppercase">introduce</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled</p>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-2">
+					<button class="btn btn-default nopadding">
+						<span>
+							<i class="in-left glyphicon glyphicon-phone-alt"></i>
+							<span>Đặt Hẹn</span>
+							<i class="in-right glyphicon glyphicon-phone-alt"></i>
+						</span>
+					</button>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--End gioithieu-->
+	<div class="about">
+		<div class="container module">
+			<div class="row">
+				<div class="title-info">
+					<h2 class="text-center text-uppercase">about us</h2>
+					<p class="title-same"><span></span></p>
+				</div>
+				<div class="content col-md-12">
+					<div class="col-sm-6 col-md-3 item">
+						<div class="box-content">
+							<div class="box-icon">
+								<a href="#"><i class="fa fa-address-book-o" aria-hidden="true"></i></a>
+							</div>
+							<div class="box-text">
+								<h3 class="text-uppercase">Lorem Ipsum</h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+							</div>
+							<div class="read-more"></div>
+						</div>
+						
+					</div>				
+					<div class="col-sm-6 col-md-3 item">
+						<div class="box-content">
+							<div class="box-icon">
+								<a href="#"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+							</div>
+							<div class="box-text">
+								<h3 class="text-uppercase">Lorem Ipsum</h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+							</div>
+							<div class="read-more"></div>
+						</div>
+					</div>			
+					<div class="col-sm-6 col-md-3 item">
+						<div class="box-content">
+							<div class="box-icon">
+								<a href="#"><i class="fa fa-camera" aria-hidden="true"></i></a>
+							</div>
+							<div class="box-text">
+								<h3 class="text-uppercase">Lorem Ipsum</h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+							</div>
+							<div class="read-more"></div>							
+						</div>
+					</div>				
+					<div class="col-sm-6 col-md-3 item">
+						<div class="box-content">
+							<div class="box-icon">
+								<a href="#"><i class="fa fa-diamond" aria-hidden="true"></i></a>
+							</div>
+							<div class="box-text">
+								<h3 class="text-uppercase">Lorem Ipsum</h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+							</div>
+							<div class="read-more"></div>
+						</div>
+					</div>
+				</div><!--end content-->
+				
+			</div>
+		</div>
+	</div>
+<!--end about-->
+	<div class="uudiem">
+		<div class="container">
+			<div class="row">
+				<div class="content-left col-md-7 col-sm-7">
+					<h2><span class="glyphicon glyphicon-screenshot"></span> What is Lorem Ipsum?</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum has been the industry standar dummyy text ever since the when an iunesi known printer of took a galley of type.<br><br>and scrambled it to make a typea specimen book There are many variations of the paes sages the Lorem Ipsum available, but the majority have to suffered alteration iner some form with injected randomised words which.</p>
+					<ul class="col-md-6">
+						<li><span class="glyphicon glyphicon-chevron-right"></span>Multiple Layout</li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span>Browser Compatibility</li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span>Parallax Effect</li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span>Many Home Page Versions</li>
+					</ul>
+					<ul class="col-md-6">
+						<li><span class="glyphicon glyphicon-chevron-right"></span>Awesome Shortcodes</li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span>Easy to Edit Animations</li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span>Responsive Design</li>
+						<li><span class="glyphicon glyphicon-chevron-right"></span>Many Blog Pages</li>
+					</ul>
+					<div class="btn-uudiem col-md-12">
+						<a href="#" class="col-xs-5 col-md-2"><span>Tư Vấn</span><span>Tư Vấn</span></a>
+						<a href="#" class="col-xs-5 col-md-2 "><span>Đặt Hẹn</span><span>Đặt Hẹn</span></a>
+					</div>
+				</div>
+				<div class="content-right col-md-5 col-sm-5">
+					<img src="img/doctor.png" alt="doctor">
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--end uudiem-->
+	<div class="choose module">
+		<div class="container">
+			<div class="row">
+				<div class="title-info">
+					<h2 class="text-uppercase text-center">why choose us</h2>
+					<p class="title-same"><span></span></p>
+				</div>
+				<div class="col-md-12">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-send"></span> VISION</a></li>
+						<li><a href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-star"></span> MENTION</a></li>
+						<li><a href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-eye-open"></span> GOALS</a></li>
+						<li><a href="#tab4" data-toggle="tab"><span class="glyphicon glyphicon-globe"></span> SOLUTIONS</a></li>
+					</ul>
+					<div class="tab-content col-sm-12 col-md-12">
+						<div class="tab-pane active " id="tab1">
+							<div class="col-sm-4 col-md-4 nopadding">
+								<img src="img/choose1.jpg" alt="choose">
+							</div>
+							<div class="col-sm-8 col-md-8">
+								<h3 class="text-uppercase">our vision</h3>
+								<p>
+									There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some<br><br>Inbox Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum recusandae rem animi accusamus quisquam reprehenderit sed voluptates, numquam, quibusdam velit dolores repellendus tempora corrupti accusantium obcaecati voluptate totam eveniet laboriosam?<br><br>Inbox Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum recusandae rem animi accusamus quisquam reprehenderit sed voluptates, numquam, quibusdam velit dolores repellendus tempora corrupti accusantium obcaecati voluptate totam eveniet laboriosam?
+								</p>
+							</div>
+						</div>
+						<div class="tab-pane" id="tab2">
+							<h3>Why do we use it?</h3>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br><br>It has survived not only five centuries
+							</p>
+						</div><div class="tab-pane" id="tab3">
+							<h3>Where does it come from?</h3>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br><br>It has survived not only five centuries
+							</p>
+						</div><div class="tab-pane" id="tab4">
+							<h3>Where can I get some?</h3>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br><br>It has survived not only five centuries
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--end choose-->
+	<div class="sumenh module">
+		<i class="fa fa-eyedropper" aria-hidden="true"></i>
+		<div class="container">
+			<div class="row">
+				<div class="title-info">
+					<h2 class="text-uppercase text-center">we are weren</h2>
+					<p class="title-same"><span></span></p>
+				</div>
+				<p class="text-center">
+					There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour of this randomised words which don't look even slightly believable.
+				</p>
+				<div id="carousel-1" class="carousel slide text-center col-md-8 col-md-offset-2" data-ride="carousel">
+				  <!-- Indicators -->
+				  	<ol class="carousel-indicators">
+					    	<li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-1" data-slide-to="1"></li>
+						<li data-target="#carousel-1" data-slide-to="2"></li>
+			   		</ol>
+
+				  <!-- Wrapper for slides -->
+				 	<div class="carousel-inner ">
+					    <div class="item active ">
+						      <img src="img/sumenh1.jpg" alt="sumenh1">
+						      <div class="carousel-caption">
+						      </div>
+					    </div>
+					    <div class="item">
+						      <img src="img/sumenh2.jpg" alt="sumenh2">
+						      <div class="carousel-caption">
+						      </div>
+					    </div>
+					    <div class="item ">
+						      <img src="img/sumenh3.jpg" alt="sumenh3">
+						      <div class="carousel-caption">
+						      </div>
+					    </div>
+					</div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-1" role="button" data-slide="prev">
+				   	 <span class="glyphicon glyphicon-chevron-left"></span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-1" role="button" data-slide="next">
+				   	<span class="glyphicon glyphicon-chevron-right"></span>
+				  </a>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--end sumenh-->
+	<div class="solieu " id="solieu">
+		<div class="container">
+			<div class="row">
+				<div class="solieu-content">
+					<div class="item col-xs-6 col-md-3">
+						<p class="glyphicon glyphicon-star-empty"></p><br>
+						<span>1500</span>
+						<p>Clients</p>
+					</div>
+					<div class="item col-xs-6 col-md-3">
+						<p class="glyphicon glyphicon-heart-empty"></p><br>
+						<span>2000</span>
+						<p>Awards</p>
+					</div>
+					<div class="item col-xs-6 col-md-3">
+						<p class="glyphicon glyphicon-thumbs-up"></p><br>
+						<span>1700</span>
+						<p>Partient</p>
+					</div>
+					<div class="item col-xs-6 col-md-3">
+						<p class="glyphicon glyphicon-refresh"></p><br>
+						<span>1600</span>
+						<p>Project</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+<script>
+	function autoASC(a, $this){
+		var text = 0;
+		setInterval(function(){
+			if(text <= a){
+		    	$this.text(text);
+		        text=text+5;
+		    }
+		},(50/a));
+	}
+	$(function(){
+		var call = false;
+		$(window).scroll(function() {
+			var hT = $('#solieu').offset().top;
+			var hH = $('#solieu').outerHeight();
+			var hB = hT + hH;
+			var wS = $(window).scrollTop();
+			var wH = $(window).height();
+			var wB = wS + wH;
+			if (wS > (hT-500) && wS < hB){
+				if (call == false) {
+					$('.solieu').find('span:not(.intro)').each(function(){
+						autoASC(parseInt($(this).text()), $(this));
+					});
+					call = true;
+					// wS > (hT+hH-wH)
+				}
+			}else{
+				call = false;
+			}
+		});
+	});
+</script>
+<!--end solieu-->
+	<div class="team module">
+		<div class="container">
+			<div class="row">
+				<div class="title-info">
+					<h2 class="text-uppercase text-center">salaried staff</h2>
+					<p class="title-same"><span></span></p>
+				</div>
+				<p class="text-center">
+					There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour of this randomised words which don't look even slightly believable.
+				</p>
+				<div class="team-content col-md-12">
+					<div class="item col-sm-4 col-md-3">
+						<div class="front">
+							<img src="img/team1.png" alt="team">
+							<p class="name">Jacson Statham</p>
+							<p class="job">Doctor</p>
+							<div class="back">
+								<p class="name">Jacson Statham</p>
+								<p class="job">Doctor</p>
+								<p class="des">Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+								<div class="social">
+									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+								</div>
+								<a href="#"><span class="glyphicon glyphicon-arrow-right"></span>  View Full Profile</a>
+							</div>
+						</div>
+					</div>
+					<div class="item col-sm-4 col-md-3">
+						<div class="front">
+							<img src="img/team1.png" alt="team">
+							<p class="name">Jacson Statham</p>
+							<p class="job">Doctor</p>
+							<div class="back">
+								<p class="name">Jacson Statham</p>
+								<p class="job">Doctor</p>
+								<p class="des">Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+								<div class="social">
+									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+								</div>
+								<a href="#"><span class="glyphicon glyphicon-arrow-right"></span>  View Full Profile</a>
+							</div>
+						</div>
+					</div>
+					<div class="item col-sm-4 col-md-3">
+						<div class="front">
+							<img src="img/team2.png" alt="team">
+							<p class="name">Dominic Toretto</p>
+							<p class="job">Doctor</p>
+							<div class="back">
+								<p class="name">Dominic Toretto</p>
+								<p class="job">Doctor</p>
+								<p class="des">Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+								<div class="social">
+									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+								</div>
+								<a href="#"><span class="glyphicon glyphicon-arrow-right"></span>  View Full Profile</a>
+							</div>
+						</div>
+					</div>
+					<div class="item col-sm-4 col-md-3">
+						<div class="front">
+							<img src="img/team2.png" alt="team">
+							<p class="name">Dominic Toretto</p>
+							<p class="job">Doctor</p>
+							<div class="back">
+								<p class="name">Dominic Toretto</p>
+								<p class="job">Doctor</p>
+								<p class="des">Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+								<div class="social">
+									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+								</div>
+								<a href="#"><span class="glyphicon glyphicon-arrow-right"></span>  View Full Profile</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--end solieu-->
+	<div class="services module">
+		<div class="container">
+			<div class="row">
+				<div class="title-info">
+					<h2 class="text-uppercase text-center">our services</h2>
+					<p class="title-same"><span></span></p>
+				</div>
+				<div class="services-content col-md-12">
+					<div class="col-sm-6 col-md-4 item">
+						<div class="col-md-3 item-left">
+							<div class="box">
+								<span class="glyphicon glyphicon-usd"></span>
+							</div>
+						</div>
+						<div class="col-md-9 item-right">
+							<h3>Lorem Ipsum</h3>
+							<p>There are many variations of demo text passed sages of Lorem Ipsum available the majority.</p>
+						</div>
+					</div>					
+					<div class="col-sm-6 col-md-4 item">
+						<div class="col-md-3 item-left">
+							<div class="box">
+								<span class="glyphicon glyphicon-earphone"></span>
+							</div>
+						</div>
+						<div class="col-md-9 item-right">
+							<h3>Lorem Ipsum</h3>
+							<p>There are many variations of demo text passed sages of Lorem Ipsum available the majority.</p>
+						</div>
+					</div>					
+					<div class="col-sm-6 col-md-4 item">
+						<div class="col-md-3 item-left">
+							<div class="box">
+								<span class="glyphicon glyphicon-fire"></span>
+							</div>
+						</div>
+						<div class="col-md-9 item-right">
+							<h3>Lorem Ipsum</h3>
+							<p>There are many variations of demo text passed sages of Lorem Ipsum available the majority.</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 item">
+						<div class="col-md-3 item-left">
+							<div class="box">
+								<span class="glyphicon glyphicon-flash"></span>
+							</div>
+						</div>
+						<div class="col-md-9 item-right">
+							<h3>Lorem Ipsum</h3>
+							<p>There are many variations of demo text passed sages of Lorem Ipsum available the majority.</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 item">
+						<div class="col-md-3 item-left">
+							<div class="box">
+								<span class="glyphicon glyphicon-pushpin"></span>
+							</div>
+						</div>
+						<div class="col-md-9 item-right">
+							<h3>Lorem Ipsum</h3>
+							<p>There are many variations of demo text passed sages of Lorem Ipsum available the majority.</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 item">
+						<div class="col-md-3 item-left">
+							<div class="box">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</div>
+						</div>
+						<div class="col-md-9 item-right">
+							<h3>Lorem Ipsum</h3>
+							<p>There are many variations of demo text passed sages of Lorem Ipsum available the majority.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--end services-->
+	<div class="phuongphap module">
+		<div class="container">
+			<div class="row">
+				<div class="title-info">
+					<h2 class="text-uppercase text-center">features</h2>
+					<p class="title-same"><span></span></p>
+				</div>
+				<div class="pp-content">
+					<div class="col-md-4 item">
+						<ul class="media-list"> 
+							<li class="media">
+							     <a class="pull-right" href="#"><i class="fa fa-rocket" aria-hidden="true"></i></a>
+								<div class="media-body text-right"> 
+									<h3>EASY TO CUSTOMIZE</h3>
+								      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p> 
+								 </div> 
+							</li>
+							<li class="media">
+							     <a class="pull-right" href="#"><i class="fa fa-desktop" aria-hidden="true"></i></a>
+								<div class="media-body text-right"> 
+									<h3>RESPONSIVE DESIGN</h3>
+								      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p> 
+								 </div> 
+							</li>
+							<li class="media">
+							     <a class="pull-right" href="#"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+								<div class="media-body text-right"> 
+									<h3>AWESOME SHORTCODE</h3>
+								      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p> 
+								 </div> 
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4 item-mid text-center">
+						<img src="img/phuongphap.jpg" alt="phuong phap">
+						<i class="fa fa-expand" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-4 item">
+						<ul class="media-list"> 
+							<li class="media">
+							     <a class="pull-left" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+								<div class="media-body text-left"> 
+									<h3>ENDLESS POSSIBILITIES</h3>
+								      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p> 
+								 </div> 
+							</li>
+							<li class="media">
+							     <a class="pull-left" href="#"><i class="fa fa-fighter-jet" aria-hidden="true"></i></a>
+								<div class="media-body text-left"> 
+									<h3>BOX WIDE</h3>
+								      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p> 
+								 </div> 
+							</li>
+							<li class="media">
+							     <a class="pull-left" href="#"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+								<div class="media-body text-left"> 
+									<h3>HTML5 VIDEO</h3>
+								      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p> 
+								 </div> 
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--end phuongphap-->
+	<div class="danhmuc module">
+		<div class="container">
+			<div class="row">
+				<div class="title-info">
+					<h2 class="text-uppercase text-center">Category</h2>
+					<p class="title-same"><span></span></p>
+				</div>
+				<div class="danhmuc-content">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#namkhoa" data-toggle="tab"><i class="fa fa-mars" aria-hidden="true"></i> Nam Khoa</a></li>
+						<li><a href="#phukhoa" data-toggle="tab"><i class="fa fa-venus" aria-hidden="true"></i> Phụ Khoa</a></li>
+						<li><a href="#benhtri" data-toggle="tab"><i class="fa fa-rocket" aria-hidden="true"></i> Bệnh Trĩ</a></li>
+						<li><a href="#benhxahoi" data-toggle="tab"><i class="fa fa-sun-o" aria-hidden="true"></i> Bệnh Xã Hội</a></li>
+					</ul>
+					<div class="tab-content col-md-12">
+						<div class="tab-pane active" id="namkhoa">
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc1.png" alt="" class="image">
+								<h3 class="text-uppercase">bao quy đầu</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc2.png" alt="" class="image">
+								<h3 class="text-uppercase">tuyến tiền liệt</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc3.png" alt="" class="image">
+								<h3 class="text-uppercase">tinh hoàn</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc4.png" alt="" class="image">
+								<h3 class="text-uppercase">đường tiết niệu</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc1.png" alt="" class="image">
+								<h3 class="text-uppercase">xuất tinh sớm</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc4.png" alt="" class="image">
+								<h3 class="text-uppercase">chỉnh hình dương vật</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc5.png" alt="" class="image">
+								<h3 class="text-uppercase">yếu sinh lý</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc6.png" alt="" class="image">
+								<h3 class="text-uppercase">liệt dương</h3>
+							</div>
+						</div>
+						<div class="tab-pane" id="phukhoa">
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc1.png" alt="" class="image">
+								<h3 class="text-uppercase">viêm phụ khoa</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc2.png" alt="" class="image">
+								<h3 class="text-uppercase">phá thai</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc3.png" alt="" class="image">
+								<h3 class="text-uppercase">buồng trứng</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc4.png" alt="" class="image">
+								<h3 class="text-uppercase">rối loạn kinh nguyệt</h3>
+							</div>
+						</div>
+						<div class="tab-pane" id="benhtri">
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc1.png" alt="" class="image">
+								<h3 class="text-uppercase">trĩ nội</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc2.png" alt="" class="image">
+								<h3 class="text-uppercase">trĩ ngoại</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc3.png" alt="" class="image">
+								<h3 class="text-uppercase">trĩ hỗn hợp</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc4.png" alt="" class="image">
+								<h3 class="text-uppercase">apxe hậu môn</h3>
+							</div>
+						</div>
+						<div class="tab-pane" id="benhxahoi">
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc1.png" alt="" class="image">
+								<h3 class="text-uppercase">bệnh giang mai</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc2.png" alt="" class="image">
+								<h3 class="text-uppercase">bệnh lậu</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc3.png" alt="" class="image">
+								<h3 class="text-uppercase">sùi mào gà</h3>
+							</div>
+							<div class="item col-xs-6 col-sm-4 col-md-3 text-center">
+								<img src="img/danhmuc4.png" alt="" class="image">
+								<h3 class="text-uppercase">mụn rộp sinh dục</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	$(function() {
+		$('.danhmuc .nav-tabs>li>a').click(function(){
+			$('.danhmuc .tab-content .item').addClass('zoom');
+		});
+	});
+</script>
+
+<!--end danhmuc-->
+	<div class="chiphi module">
+		<i class="fa fa-usd" aria-hidden="true"></i>
+		<div class="container">
+			<div class="row">
+				<div class="title-info">
+					<h2 class="text-uppercase text-center">pricing</h2>
+					<p class="title-same"><span></span></p>
+				</div>
+				<div class="chiphi-content col-md-12">
+					<div class="col-sm-6 col-md-3 item text-center">
+						<div class="box-icon">
+							<div class="box-text">
+								<p>574</p>
+								<i class="text-uppercase">monthly</i>
+							</div>
+						</div>
+						<div class="box-content">
+							<div class="box-head text-uppercase">
+								<p>starter</p>
+							</div>
+							<ul>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>   9 months Support</span></li>
+								<li><i class="fa fa-times red" aria-hidden="true"></i><span>    Lorem Ipsum</span></li>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>   9 months Support</span></li>
+								<li><i class="fa fa-times red" aria-hidden="true"></i><span>    Lorem Ipsum</span></li>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>   9 months Support</span></li>
+								<li><i class="fa fa-times red" aria-hidden="true"></i><span>    Lorem Ipsum</span></li>
+							</ul>
+							<a href=""><i class="fa fa-opencart" aria-hidden="true"></i><span>Đặt Hẹn</span></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 item text-center active">
+						<div class="box-icon">
+							<div class="box-text">
+								<p>1174</p>
+								<i class="text-uppercase">monthly</i>
+							</div>
+						</div>
+						<div class="box-content">
+							<div class="box-head text-uppercase">
+								<p>standard</p>
+							</div>
+							<ul>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>   9 months Support</span></li>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>    Lorem Ipsum</span></li>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>   9 months Support</span></li>
+								<li><i class="fa fa-times red" aria-hidden="true"></i><span>    Lorem Ipsum</span></li>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>   9 months Support</span></li>
+								<li><i class="fa fa-times red" aria-hidden="true"></i><span>    Lorem Ipsum</span></li>
+							</ul>
+							<a href=""><i class="fa fa-opencart" aria-hidden="true"></i><span>Đặt Hẹn</span></a>
+						</div>
+					</div><div class="col-sm-6 col-md-3 item text-center">
+						<div class="box-icon">
+							<div class="box-text">
+								<p>1574</p>
+								<i class="text-uppercase">monthly</i>
+							</div>
+						</div>
+						<div class="box-content">
+							<div class="box-head text-uppercase">
+								<p>professional</p>
+							</div>
+							<ul>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>   9 months Support</span></li>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>    Lorem Ipsum</span></li>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>   9 months Support</span></li>
+								<li><i class="fa fa-times red" aria-hidden="true"></i><span>    Lorem Ipsum</span></li>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>   9 months Support</span></li>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>    Lorem Ipsum</span></li>
+							</ul>
+							<a href=""><i class="fa fa-opencart" aria-hidden="true"></i><span>Đặt Hẹn</span></a>
+						</div>
+					</div><div class="col-sm-6 col-md-3 item text-center">
+						<div class="box-icon">
+							<div class="box-text">
+								<p>2574</p>
+								<i class="text-uppercase">monthly</i>
+							</div>
+						</div>
+						<div class="box-content">
+							<div class="box-head text-uppercase">
+								<p>premium</p>
+							</div>
+							<ul>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>   9 months Support</span></li>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>    Lorem Ipsum</span></li>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>   9 months Support</span></li>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>    Lorem Ipsum</span></li>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>   9 months Support</span></li>
+								<li><i class="fa fa-check green" aria-hidden="true"></i><span>    Lorem Ipsum</span></li>
+							</ul>
+							<a href=""><i class="fa fa-opencart" aria-hidden="true"></i><span>Đặt Hẹn</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--end chiphi-->
+	<div class="camnhan module">
+		<div class="container">
+			<div class="row">
+				<div class="title-info">
+					<h2 class="text-uppercase text-center">Comments</h2>
+					<p class="title-same"><span></span></p>
+				</div>
+				<div class="camnhan-content">
+					<div id="carousel-2" class="carousel slide text-center" data-ride="carousel" data-interval="2000">
+
+				  <!-- Wrapper for slides -->
+				 	<div class="carousel-inner">
+					    <div class="item active">
+						      <img src="img/hinhbn1.jpg" alt="cn1">
+						      <div class="carousel-caption">
+						      	<p>JASON STATHAM / <span>WEB DESIGNER</span></p>
+						      	<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						      </div>
+					    </div>
+					    <div class="item">
+						      <img src="img/hinhbn2.jpg" alt="cn1">
+						      <div class="carousel-caption">
+						      	<p>DWAYNE JOHNSON / <span>WEB DESIGNER</span></p>
+						      	<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						      </div>
+					    </div>
+					    <div class="item">
+						      <img src="img/hinhbn3.jpg" alt="cn1">
+						      <div class="carousel-caption">
+						      	<p>VIN DIESEL / <span>WEB DESIGNER</span></p>
+						      	<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						      </div>
+					    </div>
+					</div><!--end carousel-inner-->
+					<a class="left carousel-control" href="#carousel-2" role="button" data-slide="prev">
+				   	 <span class="glyphicon glyphicon-chevron-left"></span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-2" role="button" data-slide="next">
+					   	<span class="glyphicon glyphicon-chevron-right"></span>
+					  </a>
+				</div><!--end carousel-2-->
+				</div>
+			</div>
+		</div>
+	</div>
+<!--end camnhan-->
+	<div class="baiviet module">
+		<div class="container">
+			<div class="row">
+				<div class="title-info">
+					<h2 class="text-uppercase text-center">New Post</h2>
+					<p class="title-same"><span></span></p>
+				</div>
+				<div class="baiviet-content">
+					<div class="col-sm-6 col-md-4 item">
+						<div class="front">
+							<img src="img/baiviet1.jpg" alt="baiviet">
+							<div class="back">
+								<a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="item-text">
+							<h3 class="text-uppercase">What is Lorem Ipsum</h3>
+							<p><span class="day">2018/01/05</span>/<span class="cmt">2 comment</span>/<span class="author">Ace</span></p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Mauris non laoreet dui, Morbi lacus massa</p>
+						</div>
+					</div><div class="col-sm-6 col-md-4 item">
+						<div class="front">
+							<img src="img/baiviet2.jpg" alt="baiviet">
+							<div class="back">
+								<a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="item-text">
+							<h3 class="text-uppercase">What is Lorem Ipsum</h3>
+							<p><span class="day">2018/01/05</span>/<span class="cmt">2 comment</span>/<span class="author">Ace</span></p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Mauris non laoreet dui, Morbi lacus massa</p>
+						</div>
+					</div><div class="col-sm-6 col-md-4 item">
+						<div class="front">
+							<img src="img/baiviet3.jpg" alt="baiviet">
+							<div class="back">
+								<a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="item-text">
+							<h3 class="text-uppercase">What is Lorem Ipsum</h3>
+							<p><span class="day">2018/01/05</span>/<span class="cmt">2 comment</span>/<span class="author">Ace</span></p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Mauris non laoreet dui, Morbi lacus massa</p>
+						</div>
+					</div><div class="col-sm-6 col-md-4 item">
+						<div class="front">
+							<img src="img/baiviet4.jpg" alt="baiviet">
+							<div class="back">
+								<a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="item-text">
+							<h3 class="text-uppercase">What is Lorem Ipsum</h3>
+							<p><span class="day">2018/01/05</span>/<span class="cmt">2 comment</span>/<span class="author">Ace</span></p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Mauris non laoreet dui, Morbi lacus massa</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 item">
+						<div class="front">
+							<img src="img/baiviet5.jpg" alt="baiviet">
+							<div class="back">
+								<a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="item-text">
+							<h3 class="text-uppercase">What is Lorem Ipsum</h3>
+							<p><span class="day">2018/01/05</span>/<span class="cmt">2 comment</span>/<span class="author">Ace</span></p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Mauris non laoreet dui, Morbi lacus massa</p>
+						</div>
+					</div><div class="col-sm-6 col-md-4 item">
+						<div class="front">
+							<img src="img/baiviet6.jpg" alt="baiviet">
+							<div class="back">
+								<a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="item-text">
+							<h3 class="text-uppercase">What is Lorem Ipsum</h3>
+							<p><span class="day">2018/01/05</span>/<span class="cmt">2 comment</span>/<span class="author">Ace</span></p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Mauris non laoreet dui, Morbi lacus massa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--end baiviet-->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-3 item1">
+				<div class="item-top">
+					<h4>company info</h4>
+					<p class="text-uppercase"><span class="glyphicon glyphicon-plus"></span>phòng khám</p>
+					<p>There are many Purchase Now There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+					<a href="#">Read More</a>
+				</div>
+				<div class="item-bot">
+					<h4 class="text-uppercase">news letter singup</h4>
+					<p>By subscribing to our mailing list you will always be update with the latest news:</p>
+					<form action="action" method="post" class="form-inline">
+						<div class="form-group">
+							<ul>
+								<li><input type="text" class="form-control" />
+								<span class="glyphicon glyphicon-send"></span>
+							</li>
+							</ul>
+							
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 item2">
+				<h4>recents post</h4>
+				<ul class="media-list"> 
+					<li class="media">
+						<a class="pull-left" href="#"><img class="img-thumbnail media-object" alt="" src="img/baiviet1.jpg" width="80"></a> 
+						<div class="media-body"> 
+							<p class="text-capitalize"><a href="#">Lorem Ipsum is simply</a></p> 
+							<p class="day">2018/01/05</p>
+							<p class="author">Ace</p>
+						</div> 
+					</li>
+					<li class="media">
+						<a class="pull-left" href="#"><img class="img-thumbnail media-object" alt="" src="img/baiviet2.jpg" width="80"></a> 
+						<div class="media-body"> 
+							<p class="text-capitalize"><a href="#">Lorem Ipsum is simply</a></p> 
+							<p class="day">2018/01/05</p>
+							<p class="author">Ace</p>
+						</div> 
+					</li>
+					<li class="media">
+						<a class="pull-left" href="#"><img class="img-thumbnail media-object" alt="" src="img/baiviet4.jpg" width="80"></a> 
+						<div class="media-body"> 
+							<p class="text-capitalize"><a href="#">Lorem Ipsum is simply</a></p> 
+							<p class="day">2018/01/05</p>
+							<p class="author">Ace</p>
+						</div> 
+					</li>
+					<li class="media">
+						<a class="pull-left" href="#"><img class="img-thumbnail media-object" alt="" src="img/baiviet3.jpg" width="80"></a> 
+						<div class="media-body"> 
+							<p class="text-capitalize"><a href="#">Lorem Ipsum is simply</a></p> 
+							<p class="day">2018/01/05</p>
+							<p class="author">Ace</p>
+						</div> 
+					</li>
+				</ul>
+				<a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i> Read More Post <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+			</div>
+			<div class="col-sm-6 col-md-3 item3">
+				<div class="item-top">
+				 	<h4>cloud tag</h4>
+				 	<ul class="clearfix">
+				 		<li><a href="#">design</a></li>
+				 		<li><a href="#">html 5</a></li>
+				 		<li><a href="#">css 3</a></li>
+				 		<li><a href="#">bootstrap 3</a></li>
+				 		<li><a href="#">jquery</a></li>
+				 		<li><a href="#">javascript</a></li>
+				 	</ul>
+				</div>
+				<div class="item-bot col-md-12">
+					<h4>flick widget</h4>
+					<div class="col-sm-4 col-md-4 item"><img src="img/hinhbn1.jpg" alt="ft1"></div>
+					<div class="col-sm-4 col-md-4 item"><img src="img/hinhbn2.jpg" alt="ft1"></div>
+					<div class="col-sm-4 col-md-4 item"><img src="img/hinhbn3.jpg" alt="ft1"></div>
+					<div class="col-sm-4 col-md-4 item"><img src="img/hinhbn2.jpg" alt="ft1"></div>
+					<div class="col-sm-4 col-md-4 item"><img src="img/hinhbn3.jpg" alt="ft1"></div>
+					<div class="col-sm-4 col-md-4 item"><img src="img/hinhbn1.jpg" alt="ft1"></div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 item4">
+				<div class="item-top col-md-12">
+					<h4>author</h4>
+					<div class="box col-md-12">
+						<div class="box-icon col-xs-5 col-md-5">
+							<img src="img/author.jpg" alt="author">
+						</div>
+						<div class="box-content col-md-7">
+							<p class="text-capitalize">portgas d. ace</p>
+							<ul>
+								<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+								<li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div><!--end box-->
+				</div><!--end item-top-->
+				<div class="item-bot col-md-12">
+					<h4>custom image</h4>
+					<div id="carousel-3" class="carousel slide text-center" data-ride="carousel" data-interval="2000">
+					  <!-- Wrapper for slides -->
+					 	<div class="carousel-inner">
+						    <div class="item active"><img src="img/baiviet1.jpg" alt="cn1"></div>
+						    <div class="item"><img src="img/baiviet2.jpg" alt="cn1"></div>
+						    <div class="item"><img src="img/baiviet3.jpg" alt="cn1"></div>
+						    <div class="item"><img src="img/baiviet4.jpg" alt="cn1"></div>
+						</div>
+					</div>
+				</div><!--item bot-->
+			</div><!--end item4-->
+		</div><!--end row1-->
+	</div>
+	<div class="vd">
+		<div class="container">
+		<div class="row">
+			<div class=" end-content col-xs-12 col-md-12">
+				<div class="col-xs-12	col-sm-6">
+					<p class="text-capitalize">copyright &copy; 2018 design by <span>ace</span> - all rights reserved</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 text-right ">
+					<ul>
+						<li><a href="javascript:void(0)">Home</a></li>
+						<li><p>/</p></li>
+						<li><a href="javascript:void(0)">About Us</a></li>
+						<li><p>/</p></li>
+						<li><a href="javascript:void(0)">Help Center</a></li>
+						<li><p>/</p></li>
+						<li><a href="javascript:void(0)">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div><!--end row 2-->
+
+	</div>	
+	</div>	
+</footer>
+
+</body>
+</html>

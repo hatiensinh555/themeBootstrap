@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/style.css"></link>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+		<header>
+			<div class="navbar navbar-primary col-md-12">
+				<div class="navbar-header col-md-1">
+					<a href="" class="navbar-brand">Phòng Khám</a>
+				</div>
+				<div class="navbar-collapse col-md-8 col-sm-8 col-xm-8">
+					<ul class="nav navbar-nav">
+						<li><a href=""><span class="glyphicon glyphicon-home"></span> Trang Chủ</a></li>
+						<li class="dropdown"><a data-toggle="dropdown" href=""><span class="glyphicon glyphicon-plus"></span> Nam Khoa</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Bao Quy Đầu</a></li>
+								<li><a href="#">Xuất Tinh Sớm</a></li>
+								<li><a href="#">Liệt Dương</a></li>
+								<li><a href="#">Tuyến Tiền Liệt</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span> Bệnh Xã Hội</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="">Bệnh Lậu</a></li>
+								<li><a href="">Bệnh Mụn Rộp Sinh Dục</a></li>
+								<li><a href="">Bệnh giang Mai</a></li>
+								<li><a href="">Bệnh sùi Mào gà</a></li>
+							</ul>
+						</li>
+						<li><a href=""><span class="glyphicon glyphicon-plus"></span> Bệnh Trĩ</a></li>
+						<li><a href=""><span class="glyphicon glyphicon-plus"></span> Liên Hệ</a></li>
+					</ul>
+				</div>
+				<div class="form-inline col-md-2">
+				<form action="">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<div class="form-group">
+						<button class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>	
+					</div>
+				</form>
+				</div>
+			</div>
+		</header>
+		<script>
+			$(document).ready(function(){
+				$('ul.nav li.dropdown').hover(function() {
+				  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+				}, function() {
+				  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+				});
+			});
+		</script>
+		</div>
+	</div>
+</body>
+</html>
